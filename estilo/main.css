@@ -8,6 +8,19 @@
     background-color: antiquewhite;
 }
 
-.pessoal{
+.personal{
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
     background-color: white;
+    width: 100%;
+    grid-column: 2 / 3;
+}
+.personal > *{
+    margin: 10px 0px;
+}
+#bruno{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--azul-header);
 }
