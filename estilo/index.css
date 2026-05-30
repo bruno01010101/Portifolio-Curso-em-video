@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+}
+
+:root{
+    --azul-header: #1f5299;
+    --azul-letra: #76b1e0;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: var(--azul-header);
+    height: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px 20px;
+    gap: 30px;
+}
+
+.cabecalho > img {
+    width: 30px;
+    height: auto;
+    color: white;
+    padding: 6px;
+}
+
+.cabecalho > img:hover{
+    background-color: var(--azul-letra);
+    border-radius: 2px;
+}
