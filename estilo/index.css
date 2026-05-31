@@ -8,7 +8,11 @@
 
 :root{
     --azul-header: #1f5299;
-    --azul-letra: #76b1e0;
+    --azul-letra: #4d99d8;
+}
+
+body{
+    background-color: rgb(219, 219, 219);
 }
 
 .cabecalho{

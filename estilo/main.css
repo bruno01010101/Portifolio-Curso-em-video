@@ -1,26 +1,132 @@
 .principal{
     display: grid;
-    width: 100 vw;
-    height: 800px;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 400px;
-    grid-auto-rows: 1fr;
-    background-color: antiquewhite;
+    grid-auto-rows: auto;
 }
 
 .personal{
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section{
+    margin-top: 20px;
     padding: 20px;
     background-color: white;
     width: 100%;
     grid-column: 2 / 3;
+    border-radius: 5px;
 }
-.personal > *{
+section > *{
     margin: 10px 0px;
 }
+
 #bruno{
     width: 150px;
     border-radius: 50%;
     border: 3px solid var(--azul-header);
+    align-self: center;
+}
+
+.links{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links > img:hover {
+    box-sizing: initial;
+    width: 25px;
+}
+
+.linkedin{margin-top: -3px;}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titulo-skills{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-externa, .barra-interna{
+    margin-top: 3px;
+    height: 11px;
+    border-radius: 5px;
+}
+.barra-externa{
+    width: 100%;
+    background-color: antiquewhite;
+}
+.barra-interna{background-color: var(--azul-header);}
+.habilidade{padding-bottom: 20px;}
+
+.card{
+    border-radius: 5px;
+    background-color: rgb(240, 232, 223);
+    display: flex;
+    gap: 7px;
+    margin: 15px 0px;
+}
+
+.card:hover .barra-lateral {
+  width: 30px;
+}
+
+.barra-lateral{
+    border-radius: 5px 0px 0px 5px;
+    width: 14px;
+    background-color: var(--azul-letra);
+}
+
+.texto-formacao{
+    padding: 5px 0px;
+    line-height: 115%;
+    cursor: pointer;
+}
+
+.instituicao{
+    color: var(--azul-letra);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.imagem-projetos{
+    width: 98%;
+}
+
+.text-project{
+    padding: 10px 0px;
+    display: flex; 
+    flex-direction: 
+    column; gap: 10px; 
+    line-height: 100%;
+}
+
+footer{
+    margin-top: 30px;
+    color: white;
+    background-color: #0072cf;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
 }
