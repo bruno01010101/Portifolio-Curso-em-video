@@ -18,18 +18,17 @@ body{
 .cabecalho{
     display: flex;
     background-color: var(--azul-header);
-    height: 40px;
     align-items: center;
     justify-content: flex-end;
-    padding: 2px 20px;
+    padding: 0px 20px;
     gap: 30px;
 }
 
 .cabecalho > img {
-    width: 30px;
+    width: 40px;
     height: auto;
     color: white;
-    padding: 6px;
+    padding: 10px;
 }
 
 .cabecalho > img:hover{
@@ -39,7 +38,7 @@ body{
 }
 
 h2{
-    color: var(--azul-header);
+    color: var(--azul-letra);
     text-align: start;
 }
 
