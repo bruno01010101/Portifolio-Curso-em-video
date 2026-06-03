@@ -131,6 +131,10 @@ footer > a{
     color: white;
 }
 
+.dark{
+    background-color: rgb(59, 58, 58);
+}
+
 @media screen and (min-width: 700px) {
     .principal{
         display: grid;
