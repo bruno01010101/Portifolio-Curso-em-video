@@ -19,7 +19,7 @@ body{
 }
 
 .darki{background-color: var(--preto) !important;}
-.h2{color: var(--laranja-destaque);}
+.h2{color: var(--laranja-destaque) !important;}
 .light-dark{
     background-color: var(--preto-claro) !important;
     color: white;
@@ -28,6 +28,7 @@ body{
     background-color: var(--laranja-destaque) !important;
 
 }
+.borda{border-color: var(--laranja-destaque) !important;}
 
 .cabecalho{
     display: flex;
