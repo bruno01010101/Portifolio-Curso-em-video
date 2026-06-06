@@ -13,13 +13,16 @@ document.addEventListener('scroll', (e) => {
 
 function mudarTema(evento){
     cont++
-    const main = document.querySelector('.principal')
+    const body = document.querySelector('body')
     const borda = document.querySelector('.bruno');
     const home = document.querySelector('.home')
+    const svg = document.querySelectorAll('.svg')
+    const footer = document.querySelector('footer')
 
     borda.classList.toggle('borda')
-    main.classList.toggle('darki')
+    body.classList.toggle('darki')
     menu.classList.toggle('dark-menu')
+    footer.classList.toggle('light-dark')
 
     aplicaTodos(document.querySelectorAll('section'), 'light-dark')
     aplicaTodos(document.querySelectorAll('h2'), 'h2') 
@@ -29,18 +32,29 @@ function mudarTema(evento){
     aplicaTodos(document.querySelectorAll('.barra-lateral'), 'bckl')
     aplicaTodos(document.querySelectorAll('.instituicao'), 'h2')
 
+    svg.forEach((e) => {
+        console.log(e)
+        if(cont % 2 === 0){
+            let urlCorreta = e.src.replace('assets/', 'assets/laranja-')
+            e.src = urlCorreta
+        }else{
+            let urlCorreta = e.src.replace('assets/laranja-', 'assets/')
+            e.src = urlCorreta
+        }
+    })
+
     for(let e of menu.children){
         if(cont % 2 === 0){
-            let urlCorreta = e.src.replace('http://127.0.0.1:5500/imagens/', 'http://127.0.0.1:5500/imagens/black-')
+            let urlCorreta = e.src.replace('imagens/', 'imagens/black-')
             e.src = urlCorreta
-            document.querySelector('.flecha').src = 'http://127.0.0.1:5500/imagens/orange-flecha.png' 
-            document.querySelector('.cerebro').src = 'http://127.0.0.1:5500/imagens/orange-brain.png'
+            document.querySelector('.flecha').src = 'imagens/orange-flecha.png' 
+            document.querySelector('.cerebro').src = 'imagens/orange-brain.png'
         }
         else{
-            let urlCorreta = e.src.replace('http://127.0.0.1:5500/imagens/black-', 'http://127.0.0.1:5500/imagens/')
+            let urlCorreta = e.src.replace('imagens/black-', 'imagens/')
             e.src = urlCorreta
-            document.querySelector('.flecha').src = 'http://127.0.0.1:5500/imagens/flecha-azul.png' 
-            document.querySelector('.cerebro').src = 'http://127.0.0.1:5500/imagens/blue-brain.png'
+            document.querySelector('.flecha').src = 'imagens/flecha-azul.png' 
+            document.querySelector('.cerebro').src = 'imagens/blue-brain.png'
         }
     }
 }

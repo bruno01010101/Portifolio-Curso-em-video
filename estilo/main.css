@@ -83,12 +83,12 @@ section > *{
 }
 
 .card:hover .barra-lateral {
-  width: 30px;
+  width: 23px;
 }
 
 .barra-lateral{
     border-radius: 5px 0px 0px 5px;
-    width: 14px;
+    width: 10px;
     background-color: var(--azul-letra);
 }
 
@@ -131,6 +131,10 @@ footer > a{
     color: white;
 }
 
+footer > a:hover{
+    text-decoration: underline;
+}
+
 .dark{
     background-color: rgb(59, 58, 58);
 }
@@ -148,8 +152,13 @@ footer > a{
         height: 130%;
         position: sticky;
         top: 60px;
+        justify-content: center;
+        gap: 20px;
     }
 
+    .personal-text{font-size: 15px;}
+    .personal-h2{font-size: 28px;}
+    .bruno{width: 180px;}
     section{
         grid-column: 4 / 5;
     }
