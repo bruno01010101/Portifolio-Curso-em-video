@@ -1,7 +1,7 @@
 .principal{
     display: grid;
     grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 400px;
+    grid-template-rows: 450px;
     grid-auto-rows: auto;
 }
 
@@ -149,16 +149,15 @@ footer > a:hover{
 
     .personal{
         grid-column: 2 / 3;
-        height: 130%;
+        height: 120%;
         position: sticky;
         top: 60px;
         justify-content: center;
         gap: 20px;
     }
 
-    .personal-text{font-size: 15px;}
-    .personal-h2{font-size: 28px;}
-    .bruno{width: 180px;}
+    .personal-text{font-size: 13px;}
+    .bruno{width: 150px;}
     section{
         grid-column: 4 / 5;
     }
